@@ -6,7 +6,7 @@
 
 
 async function getWeather(searchInput) {
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=d00946e814a4480e8c020844232509&q=${searchInput}`)
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=d00946e814a4480e8c020844232509&q=${searchInput}`)
     const weatherData = await response.json();
 
     const data = {
