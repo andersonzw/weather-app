@@ -28,7 +28,14 @@ async function getWeather(searchInput) {
     
     console.log("object");
     document.querySelector(".card-content").classList.remove("loading")
-    let randomBgLink = `https://source.unsplash.com/random/3840x2160/?${searchInput}`
+
+    if (searchInput.split(' ').length === 2){
+         randomBgLink = `https://source.unsplash.com/random/1920x1080/?${searchInput.split(' ')[0] + '+' + searchInput.split(' ')[1]}`
+
+    }
+    else {
+         randomBgLink = `https://source.unsplash.com/random/1920x1080/?${searchInput}`
+    }
     document.querySelector("body").style.backgroundImage =  `url(${randomBgLink}) `
 }
 
