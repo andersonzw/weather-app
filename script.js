@@ -28,6 +28,8 @@ async function getWeather(searchInput) {
     
     console.log("object");
     document.querySelector(".card-content").classList.remove("loading")
+    let randomBgLink = `https://source.unsplash.com/random/3840x2160/?${searchInput}`
+    document.querySelector("body").style.backgroundImage =  `url(${randomBgLink}) `
 }
 
 

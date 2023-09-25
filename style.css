@@ -10,6 +10,8 @@ body {
     background: url(assets/chirayu-sharma-27heHQl2JtY-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    backdrop-filter: blur(5px);
+
 
 }
 
@@ -29,7 +31,6 @@ body {
     justify-content: center;
 }
 
-button {}
 
 button {
     height: 40px;
