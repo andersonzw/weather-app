@@ -30,13 +30,14 @@ async function getWeather(searchInput) {
     document.querySelector(".card-content").classList.remove("loading")
 
     if (searchInput.split(' ').length === 2){
-         randomBgLink = `https://source.unsplash.com/random/1920x1080/?${searchInput.split(' ')[0] + '+' + searchInput.split(' ')[1]}`
+         randomBgLink = `https://source.unsplash.com/random/?${searchInput.split(' ')[0] + '+' + searchInput.split(' ')[1]}`
 
     }
     else {
-         randomBgLink = `https://source.unsplash.com/random/1920x1080/?${searchInput}`
+         randomBgLink = `https://source.unsplash.com/random/?${searchInput}`
     }
     document.querySelector("body").style.backgroundImage =  `url(${randomBgLink}) `
+    
 }
 
 
@@ -57,3 +58,7 @@ searchBar.addEventListener("keypress", (e)=> {
 
 getWeather("melbourne")
 
+
+window.addEventListener('load', (event) => {
+    document.body.style.backdropFilter = "blur(20px)"
+  });

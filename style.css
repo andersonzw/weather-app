@@ -1,5 +1,7 @@
 
-
+html {
+    background-color: #323335;
+}
 body {
     display: flex;
     align-items: center;
@@ -10,7 +12,7 @@ body {
     background: url(assets/chirayu-sharma-27heHQl2JtY-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 
 
 }
